@@ -10,7 +10,7 @@ const ClientsHome = () => {
     return (
         <>
             <Header />
-            <div className='container mb-5'>
+            <div className='container mb-5 '>
                 <div>
                     <p className='text-2'>Find the Top <span style={{ color: "#0077FF" }}>Professionals</span> for you with super <span style={{ color: "#0077FF" }}>speed !</span></p>
                 </div>
