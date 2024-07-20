@@ -6,6 +6,9 @@ import ClientsHome from "./pages/clientsHome";
 import ProjectPosting from "./pages/ProjectPosting";
 import Bio from "./pages/Bio";
 import Professional from "./professional/Professional";
+import ClientsHome from "./Client/clientsHome";
+import ProjectPosting from "./Client/ProjectPosting";
+import Bio from "./Client/Bio";
 
 function App() {
   return (
