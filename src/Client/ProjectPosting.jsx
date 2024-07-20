@@ -4,6 +4,7 @@ import DropdownButton from 'react-bootstrap/DropdownButton';
 import OffcanvasProjectPosting from '../components/OffcanvasProjectPosting';
 import './style.css'
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 const ProjectPosting = () => {
     const [currentStage, setCurrentStage] = useState(1);
@@ -53,7 +54,7 @@ const ProjectPosting = () => {
                 </>
             )}
             {currentStage === 4 && <SuccessMessage />}
-            <Footer/>
+            <Footer />
         </div>
     );
 };
@@ -150,9 +151,13 @@ const Stage3Form = ({ onComplete }) => {
 
 const SuccessMessage = () => {
     return (
-        <div className='text-center mt-5'>
-            <h2 className='text-success'>Success</h2>
-            <button className='btn btn-primary mt-3' onClick={() => window.location.href = '/'}>Back to Home Screen</button>
+        <div className='text-center' style={{ marginTop: "10rem" }}>
+            <div className='rounded-circle' style={{ height: "20rem", backgroundColor: "#D4E3FC", width: "20rem", marginLeft: "2.7rem" }}>
+                <img src='../Images/Vector.png' style={{ marginTop: "8rem" }} />
+            </div>
+            <h1 className='mt-5' style={{ fontSize: "40px" }}>Success</h1>
+            <p className='text-muted'>Your project has been posted successfully</p>
+            <Link to="/"><button className='form-control bg-primary text-white' style={{ height: "4rem", marginTop: "9rem" }}>Back to Home Screen</button></Link>
         </div>
     );
 };
