@@ -5,6 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import ClientsHome from "./pages/clientsHome";
 import ProjectPosting from "./pages/ProjectPosting";
 import Bio from "./pages/Bio";
+import Professional from "./professional/Professional";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<ClientsHome />}></Route>
           <Route path="/project-posting" element={<ProjectPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
+          <Route path="/professional" element={<Professional />} />
         </Routes>
       </BrowserRouter>
     </div>
