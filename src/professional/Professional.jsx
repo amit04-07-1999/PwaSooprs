@@ -4,7 +4,7 @@ import Header from "../components/Header";
 
 const Professional = () => {
   return (
-    <div>
+    <div className="container">
       <Header 
         post="Post a GIG"
       />
