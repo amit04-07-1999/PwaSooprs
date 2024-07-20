@@ -1,0 +1,12 @@
+.hover-effect{
+    display: grid;
+    height: 2rem;
+    place-content: center;
+    padding: 15px;
+  }
+  .hover-effect:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 1rem;
+    cursor: pointer; 
+  }
