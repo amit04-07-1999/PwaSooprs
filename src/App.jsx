@@ -18,6 +18,7 @@ import ForgotPaddwordOtp from "./Auth/ForgotPaddwordOtp";
 import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
+import PersonalChat from "./About/PersonalChat";
 
 function App() {
   return (
@@ -30,8 +31,8 @@ function App() {
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/chat" element={<Chat/>} />
-          <Route path="/Notification" element={<Notification />}></Route>
-          <Route path="/TermAndCondition" element={<TermAndCondition />}></Route>
+          <Route path="/notification" element={<Notification />}></Route>
+          <Route path="/termAndCondition" element={<TermAndCondition />}></Route>
           <Route path="/profile" element={<ProfileSection/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
@@ -39,7 +40,7 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword/>} />
           <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
           <Route path="/editprofile" element={<EditProfile/>} />
-
+          <Route path="/personalchat" element={<PersonalChat/>} />
 
           <Route path="/error404" element={<Error404 />} />
         </Routes>

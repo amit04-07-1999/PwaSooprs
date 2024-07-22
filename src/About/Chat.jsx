@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Footer from "../components/Footer";
 
 
 const MultipleChat = () => {
@@ -96,10 +98,11 @@ const Chat = () => {
                     </h1>
                 </div>
             </div>
+            <Link to="/personalchat" style={{textDecoration:"none"}}><MultipleChat /></Link>
             <MultipleChat />
             <MultipleChat />
             <MultipleChat />
-            <MultipleChat />
+            <Footer/>
         </div>
     );
 };
