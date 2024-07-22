@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Img from "../assets/Img";
 import { Link } from "react-router-dom";
+import Img from "../../public/Images/Img";
+
 
 const Login = () => {
   return (
@@ -67,7 +68,7 @@ const Login = () => {
             Login
           </button>
         </form>
-      <Link to="/forgot" style={{textDecoration:"none",  textAlign: "end",}}>
+      <Link to="/forgotpassword" style={{textDecoration:"none",  textAlign: "end",}}>
         <span
           className=""
           style={{
