@@ -16,6 +16,7 @@ import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
 import GigsScreen from "./Gigslist/GigsScreen";
+import GigPageDetailed from "./Gigslist/GigPageDetailed";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
           <Route path="/gigs" element={<GigsScreen/>}/>
+          <Route path="/gigpagedetailed" element={<GigPageDetailed/>}/>
           <Route path="/profile" element={<ProfileSection/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
