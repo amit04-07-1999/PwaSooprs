@@ -20,6 +20,8 @@ import ManagePassword from "./EditProfile/ManagePassword";
 import BankDetails from "./EditProfile/BankDetails";
 import ManagePortfolio from "./EditProfile/ManagePortfolio";
 import AddExperience from "./EditProfile/AddExperience";
+import GigsScreen from "./Gigslist/GigsScreen";
+import GigPageDetailed from "./Gigslist/GigPageDetailed";
 
 function App() {
   return (
@@ -43,6 +45,17 @@ function App() {
           <Route path="/bankdetails" element={<BankDetails />} />
           <Route path="/manageportfolio" element={<ManagePortfolio />} />
           <Route path="/addexperience" element={<AddExperience />} />
+          <Route path="/gigs" element={<GigsScreen/>}/>
+          <Route path="/gigpagedetailed" element={<GigPageDetailed/>}/>
+          <Route path="/profile" element={<ProfileSection/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/newpassword" element={<NewPassword/>} />
+          <Route path="/forgotpassword" element={<ForgotPassword/>} />
+          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
+          <Route path="/editprofile" element={<EditProfile/>} />
+
+
           <Route path="/error404" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
