@@ -26,13 +26,14 @@ function App() {
           <Route path="/gig-posting" element={<GigPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
+          <Route path="/gigs" element={<GigsScreen/>}/>
           <Route path="/profile" element={<ProfileSection/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/signup" element={<SignUp/>} />
           <Route path="/newpassword" element={<NewPassword/>} />
           <Route path="/forgotpassword" element={<ForgotPassword/>} />
           <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
-          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+          <Route path="/editprofile" element={<EditProfile/>} />
 
 
           <Route path="/error404" element={<Error404 />} />
