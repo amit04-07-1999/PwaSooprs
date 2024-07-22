@@ -1,7 +1,10 @@
 import React from "react";
-import Forgotimage from "../Components/Forgotimage";
-import ForgotLoginLink from "../Components/ForgotLoginLink";
 import { Link } from "react-router-dom";
+import Forgotimage from "../components/Forgotimage";
+import ForgotLoginLink from "../components/ForgotLoginLink";
+
+
+
 
 const ForgotPaddwordOtp = () => {
   return (
