@@ -2,6 +2,7 @@ import React from "react";
 import graph from "../../public/Images/graph.png";
 import hand from "../../public/Images/hand.png";
 import web from "../../public/Images/Web.png";
+import SkillsCard from "../components/SkillsCard";
 
 const SerachHere = () => {
   return (
@@ -30,8 +31,9 @@ const Categrorys = ({ img, title }) => {
         <div
           style={{
             borderRadius: "30px",
-            width: "200px", 
-            boxShadow: "0px 1px 4px 5px rgba(205, 237, 255, 0.4)",
+            width: "200px",
+            marginBottom: "0.5rem",
+            boxShadow:"0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
           }}
           className="p-2"
         >
@@ -60,10 +62,10 @@ const ProfessionalHome = () => {
     display: "flex",
     gap: "15px",
     WebkitScrollbar: {
-      display: "none"
+      display: "none",
     },
-    msOverflowStyle: "none", 
-    scrollbarWidth: "none" 
+    msOverflowStyle: "none",
+    scrollbarWidth: "none",
   };
 
   return (
@@ -79,9 +81,13 @@ const ProfessionalHome = () => {
           <Categrorys img={hand} title="Graphic Designer" />
         </div>
       </div>
+      <SkillsCard />
+      <SkillsCard />
+      <SkillsCard />
+      <SkillsCard />
+      <SkillsCard />
     </div>
   );
 };
-
 
 export default ProfessionalHome;

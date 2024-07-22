@@ -67,19 +67,19 @@ const Bio = () => {
       setData({
         title: "Company Info",
         content: "This is the Company info data.",
-        component: <CompanyInfoComponent />,
+        // component: <CompanyInfoComponent />,
       });
     } else if (btn === "Projects") {
       setData({
         title: "Projects",
         content: "This is the Projects data.",
-        component: <ProjectsComponent />,
+        // component: <ProjectsComponent />,
       });
     } else if (btn === "Reviews") {
       setData({
         title: "Reviews",
         content: "This is the Reviews data.",
-        component: <ReviewsComponent />,
+        // component: <ReviewsComponent />,
       });
     }
   };

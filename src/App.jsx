@@ -6,6 +6,8 @@ import ClientsHome from "./Client/clientsHome";
 import Professional from "./professional/Professional";
 import ProjectPosting from "./Client/ProjectPosting";
 import Bio from "./Client/Bio";
+import ProfessionalHeader from "./components/ProfessionalHeader";
+import ProfessionalDetails from "./professional/ProfessionalDetails";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/project-posting" element={<ProjectPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
+          <Route path="/prfessional-details" element={<ProfessionalDetails/>}/>
         </Routes>
       </BrowserRouter>
     </div>
