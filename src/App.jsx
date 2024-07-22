@@ -15,10 +15,15 @@ import ForgotPaddwordOtp from "./Auth/ForgotPaddwordOtp";
 import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
+import ManageDetail from "./EditProfile/ManageDetail";
+import ManagePassword from "./EditProfile/ManagePassword";
+import BankDetails from "./EditProfile/BankDetails";
+import ManagePortfolio from "./EditProfile/ManagePortfolio";
+import AddExperience from "./EditProfile/AddExperience";
 
 function App() {
   return (
-    <div className="" style={{ maxWidth: "430px"}}>
+    <div className="" style={{ maxWidth: "430px" }}>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<ClientsHome />}></Route>
@@ -26,15 +31,18 @@ function App() {
           <Route path="/gig-posting" element={<GigPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
-          <Route path="/profile" element={<ProfileSection/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/signup" element={<SignUp/>} />
-          <Route path="/newpassword" element={<NewPassword/>} />
-          <Route path="/forgotpassword" element={<ForgotPassword/>} />
-          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
-          <Route path="/editprofile" element={<EditProfile/>} />
-
-
+          <Route path="/profile" element={<ProfileSection />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/newpassword" element={<NewPassword />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp />} />
+          <Route path="/editprofile" element={<EditProfile />} />
+          <Route path="/managedetail" element={<ManageDetail />} />
+          <Route path="/managepassword" element={<ManagePassword />} />
+          <Route path="/bankdetails" element={<BankDetails />} />
+          <Route path="/manageportfolio" element={<ManagePortfolio />} />
+          <Route path="/addexperience" element={<AddExperience />} />
           <Route path="/error404" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
