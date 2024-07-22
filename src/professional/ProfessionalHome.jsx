@@ -3,6 +3,7 @@ import graph from "../../public/Images/graph.png";
 import hand from "../../public/Images/hand.png";
 import web from "../../public/Images/Web.png";
 import SkillsCard from "../components/SkillsCard";
+import { Link, NavLink } from "react-router-dom";
 
 const SerachHere = () => {
   return (
@@ -33,7 +34,8 @@ const Categrorys = ({ img, title }) => {
             borderRadius: "30px",
             width: "200px",
             marginBottom: "0.5rem",
-            boxShadow:"0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
+            boxShadow:
+              "0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
           }}
           className="p-2"
         >
@@ -81,11 +83,29 @@ const ProfessionalHome = () => {
           <Categrorys img={hand} title="Graphic Designer" />
         </div>
       </div>
-      <SkillsCard />
-      <SkillsCard />
-      <SkillsCard />
-      <SkillsCard />
-      <SkillsCard />
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+        <SkillsCard />
+      </Link>
+
+    
     </div>
   );
 };
