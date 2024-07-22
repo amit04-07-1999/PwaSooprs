@@ -11,7 +11,7 @@ const Header = () => {
                 {/* <img src='../Images/wavehand.png' className='wavehand'/> */}
                 <span className='wavehand'>&#128075;</span>
                 <Link to="/project-posting"><button className='text-1'>Post a Project</button></Link>
-                <span style={{ marginTop: "0.5vh" }}>🔔</span>
+                <span style={{ marginTop: "0.3vh" }}><i class="bi bi-bell-fill text-primary fs-3"></i></span>
             </div>
         </div>
     )
