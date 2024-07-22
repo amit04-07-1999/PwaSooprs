@@ -15,6 +15,7 @@ import ForgotPaddwordOtp from "./Auth/ForgotPaddwordOtp";
 import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
+import GigsScreen from "./Gigslist/GigsScreen";
 
 function App() {
   return (
