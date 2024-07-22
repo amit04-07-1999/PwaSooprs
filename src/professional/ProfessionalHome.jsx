@@ -7,7 +7,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const SerachHere = () => {
   return (
-    <div className="d-flex gap-2">
+    <div className="d-flex gap-2 mt-5">
       <div>
         <i
           class="bi bi-search"

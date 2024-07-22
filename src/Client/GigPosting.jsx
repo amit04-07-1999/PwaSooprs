@@ -28,9 +28,14 @@ const GigPosting = () => {
             {currentStage < 4 && (
                 <>
                     <div className='d-flex gap-4 mt-5'>
-                        {/* <i className="bi bi-arrow-left fs-2" style={{}}></i> */}
+                        {currentStage === 1 &&
+                            <Link to="/home" style={{}}><i className="bi bi-arrow-left fs-2"></i></Link>}
+
+                        {currentStage > 1 &&
+                            <i className="bi bi-arrow-left fs-2" onClick={() => setCurrentStage(currentStage - 1)}></i>}
+
                         <div>
-                            <span className='text-2 fs-1'>Provide details about<span style={{ color: "#0077FF" }}> your GIG </span></span>
+                            <span className='text-2 fs-2'>Provide details about<span style={{ color: "#0077FF" }}> your GIG </span></span>
                             <span className='text-mute'>Let's create the perfect brief together. The more details you include, the better</span>
                         </div>
                     </div>
@@ -200,7 +205,7 @@ const SuccessMessage = () => {
             </div>
             <h1 className='mt-5' style={{ fontSize: "40px" }}>Success</h1>
             <p className='text-muted'>Your project has been posted successfully</p>
-            <Link to="/"><button className='form-control bg-primary text-white' style={{ height: "4rem", marginTop: "9rem" }}>Back to Home Screen</button></Link>
+            <Link to="/home"><button className='form-control bg-primary text-white' style={{ height: "4rem", marginTop: "9rem" }}>Back to Home Screen</button></Link>
         </div>
     );
 };
