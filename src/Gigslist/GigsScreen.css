@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+.gig-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #333; 
+  }
+
+  .search-bar::placeholder {
+    color: lightgray; 
+    opacity: 1;
+  }
+
+  .cardText{
+
+    font-family: 'Roboto', sans-serif;
+    color:#FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.25px;
+
+  }
+
+.exploreCard {
+        height: 190px;
+        width: 390px;
+        border-radius: 8px;
+        background: linear-gradient(to right, #FF9259 0%, #E88754 100%);
+
+}
+
+.catSectionItem{
+
+    background-color: antiquewhite;
+    width:220px;
+    height:60px;
+    border-radius: 25px;
+    padding:11px;
+    
+
+}
+
+
+     

@@ -6,6 +6,7 @@ import Professional from "./professional/Professional";
 import ClientsHome from "./Client/clientsHome";
 import ProjectPosting from "./Client/ProjectPosting";
 import Bio from "./Client/Bio";
+import GigsScreen from "./Gigslist/GigsScreen";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/project-posting" element={<ProjectPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
+          <Route path="/gigs" element={<GigsScreen/>}/>
         </Routes>
       </BrowserRouter>
     </div>
