@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Dropdown from 'react-bootstrap/Dropdown';
 import DropdownButton from 'react-bootstrap/DropdownButton';
 import OffcanvasProjectPosting from '../components/OffcanvasProjectPosting';
@@ -6,7 +6,10 @@ import './style.css'
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 
-const ProjectPosting = () => {
+const GigPosting = () => {
+
+
+
     const [currentStage, setCurrentStage] = useState(1);
     const [completionStatus, setCompletionStatus] = useState({
         stage1: false,
@@ -19,14 +22,15 @@ const ProjectPosting = () => {
         setCurrentStage(currentStage + 1);
     };
 
+
     return (
         <div className='container'>
             {currentStage < 4 && (
                 <>
                     <div className='d-flex gap-4 mt-5'>
-                        <i className="bi bi-arrow-left fs-2" style={{}}></i>
+                        {/* <i className="bi bi-arrow-left fs-2" style={{}}></i> */}
                         <div>
-                            <span className='text-2 fs-1'>Let us know what<span style={{ color: "#0077FF" }}> you need </span></span>
+                            <span className='text-2 fs-1'>Provide details about<span style={{ color: "#0077FF" }}> your GIG </span></span>
                             <span className='text-mute'>Let's create the perfect brief together. The more details you include, the better</span>
                         </div>
                     </div>
@@ -39,12 +43,12 @@ const ProjectPosting = () => {
                         <div className='line'></div>
                         <div>
                             <h2 style={{ width: "4rem" }} className={completionStatus.stage2 ? " d-flex justify-content-center border border-secondary p-3 rounded-5 bg-primary text-white" : "d-flex justify-content-center border border-secondary py-3 px-1 rounded-circle"}>{completionStatus.stage2 ? '✓' : '2'}</h2>
-                            <p>Budget</p>
+                            <p>Details</p>
                         </div>
                         <div className='line'></div>
                         <div>
                             <h2 style={{ width: "4rem" }} className={completionStatus.stage3 ? " d-flex justify-content-center border border-secondary p-3 rounded-5 bg-primary text-white" : "d-flex justify-content-center border border-secondary py-3 px-1 rounded-circle"}>{completionStatus.stage3 ? '✓' : '3'}</h2>
-                            <p>Submit</p>
+                            <p>Budget</p>
                         </div>
                     </div>
 
@@ -60,27 +64,89 @@ const ProjectPosting = () => {
 };
 
 const Stage1Form = ({ onComplete }) => {
+
+    const inputRef = useRef(null)
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        onComplete();
+    };
+    const handelfiles = () => {
+        inputRef.current.click()
+    }
+
+
+    return (
+        <form className='mt-5' onSubmit={handleSubmit}>
+            <div>
+                <h6 className='fw-bold'>Project Title</h6>
+                <input type='text' className='form-control' placeholder='Project Name' style={{ height: "3.5rem" }} />
+            </div>
+            <DropdownButton id="dropdown-basic-button" title="Select Category" className='mt-3'>
+                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            </DropdownButton>
+            <input type='text' className='form-control mt-4' placeholder='Ctegory' style={{ height: "3.5rem" }} />
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Technologies</h6>
+                <input type='text' className='form-control ' placeholder='Technologies...' style={{ height: "3.5rem" }} />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Tags</h6>
+                <input type='text' className='form-control' placeholder='Tags' style={{ height: "3.5rem" }} />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Gig Type</h6>
+                <input type='text' className='form-control ' placeholder='Gig Type' style={{ height: "3.5rem" }} />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Description</h6>
+                <textarea typeof='text' className='form-control' rows="11" placeholder='Enter Desctiption...' />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Photos</h6>
+                <input type='file' ref={inputRef} hidden />
+                <div style={{ border: "1px solid #8080804f", height: "20rem", borderRadius: "1rem", }} className='d-flex justify-content-center' onClick={handelfiles}>
+                    <img src='../Images/Camera.png' height="70rem" style={{ marginTop: "8rem" }} />
+                </div>
+            </div>
+
+            <button type="submit" className='form-control mt-4  bg-primary text-white' style={{ height: "4rem", marginBottom: "7rem" }}>Next</button>
+        </form>
+    );
+};
+
+const Stage2Form = ({ onComplete }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onComplete();
     };
 
     return (
-        <form className='mt-5' onSubmit={handleSubmit}>
-            <DropdownButton id="dropdown-basic-button" title="Select Category">
-                <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-            </DropdownButton>
-            <input type='text' className='form-control mt-4' placeholder='Service Name' style={{ height: "3.5rem" }} />
-            <textarea typeof='text' className='form-control mt-4' rows="11" placeholder='Write your requirements here...' />
-
-            <button type="submit" className='form-control mt-4  bg-primary text-white' style={{ height: "4rem" }}>Next</button>
+        <form className='mt-4' onSubmit={handleSubmit}>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Delivery Days</h6>
+                <input type='text' className='form-control' placeholder='Type here' style={{ height: "3.5rem" }} />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Revision</h6>
+                <input type='text' className='form-control' placeholder='Type here' style={{ height: "3.5rem" }} />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold'>Source File </h6>
+                <input type='text' className='form-control' placeholder='Type here' style={{ height: "3.5rem" }} />
+            </div>
+            <div className='mt-4'>
+                <h6 className='fw-bold text-primary'>Add Other Details </h6>
+                <input type='text' className='form-control mt-4' placeholder='Type here' style={{ height: "3.5rem" }} />
+                <input type='text' className='form-control mt-4' placeholder='Type here' style={{ height: "3.5rem" }} />
+            </div>
+            <button type="submit" className='form-control mt-5 bg-primary text-white' style={{ height: "4rem", marginBottom: "7rem" }}>Next</button>
         </form>
     );
 };
 
-const Stage2Form = ({ onComplete }) => {
+const Stage3Form = ({ onComplete }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         onComplete();
@@ -120,29 +186,7 @@ const Stage2Form = ({ onComplete }) => {
                     <input type='text' className='form-control' placeholder='Enter Max. Budget' style={{ height: "3.5rem" }} />
                 </div>
             </div>
-            <button type="submit" className='form-control mt-3 bg-primary text-white' style={{ height: "4rem" }}>Next</button>
-        </form>
-    );
-};
-
-const Stage3Form = ({ onComplete }) => {
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        onComplete();
-    };
-
-    return (
-        <form className='mt-4' onSubmit={handleSubmit}>
-            <h6 className='fw-bold'>Project Description</h6>
-            <div className='mt-4'>
-                <p>Project Title</p>
-                <input type='text' className='form-control' placeholder='Enter Project Title' style={{ height: "3.5rem" }} />
-            </div>
-            <div className='mt-2'>
-                <p>Description</p>
-                <textarea typeof='text' className='form-control' rows="8" placeholder='Enter Project Description...' />
-            </div>
-            <button type="submit" className='form-control mt-5 bg-primary text-white' style={{ height: "4rem" }}>Complete</button>
+            <button type="submit" className='form-control mt-3 bg-primary text-white' style={{ height: "4rem" }}>Complete</button>
         </form>
     );
 };
@@ -161,4 +205,4 @@ const SuccessMessage = () => {
     );
 };
 
-export default ProjectPosting;
+export default GigPosting;

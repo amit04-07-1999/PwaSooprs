@@ -14,6 +14,7 @@
   letter-spacing: 0.25px;
   text-align: center;
   margin-top: 10px;
+  margin-left: 0.5rem;
 }
 .wavehand {
   width: 5rem;
@@ -31,6 +32,7 @@
   color: white;
   border-radius: 1vh;
   width: 8rem;
+  margin-right: 0.5rem;
 }
 .text-2 {
   width: 349px;
