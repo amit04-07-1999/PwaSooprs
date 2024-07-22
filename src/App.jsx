@@ -14,7 +14,6 @@ import ForgotPaddwordOtp from "./Auth/ForgotPaddwordOtp";
 import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
-import PersonalChat from "./About/PersonalChat";
 import GigsScreen from "./Gigslist/GigsScreen";
 import GigPageDetailed from "./Gigslist/GigPageDetailed";
 
@@ -28,19 +27,6 @@ function App() {
           <Route path="/gig-posting" element={<GigPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
-          <Route path="/prfessional-details" element={<ProfessionalDetails />} />
-          <Route path="/chat" element={<Chat />} />
-          <Route path="/notification" element={<Notification />}></Route>
-          <Route path="/termAndCondition" element={<TermAndCondition />}></Route>
-          <Route path="/profile" element={<ProfileSection />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/newpassword" element={<NewPassword />} />
-          <Route path="/forgotpassword" element={<ForgotPassword />} />
-          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp />} />
-          <Route path="/editprofile" element={<EditProfile />} />
-          <Route path="/personalchat" element={<PersonalChat />} />
-          <Route path="/" element={<ProfileSection />} />
           <Route path="/gigs" element={<GigsScreen/>}/>
           <Route path="/gigpagedetailed" element={<GigPageDetailed/>}/>
           <Route path="/profile" element={<ProfileSection/>} />
