@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <div className='d-flex justify-content-around p-2 mt-5 border text-primary fixed-bottom' style={{ borderRadius: "2rem 2rem 0 0", backgroundColor: "white" }}>
+        <div className='d-flex justify-content-around p-2 mt-5 border text-primary' style={{ borderRadius: "2rem 2rem 0 0", backgroundColor: "white", position:"fixed", bottom:"0", width:"100%", listStyle:"none" }}>
             <Link to="/">
                 <div>
                     <i class="bi bi-house-door-fill p-2"></i>
@@ -22,7 +22,7 @@ const Footer = () => {
                     <p>Professional</p>
                 </div>
             </Link>
-            <Link to="/">
+            <Link to="/gig-posting">
                 <div>
                     <i class="bi bi-graph-up-arrow p-1"></i>
                     <p>Gigs</p>

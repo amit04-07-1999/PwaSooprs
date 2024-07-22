@@ -10,7 +10,7 @@ const ClientsHome = () => {
     return (
         <>
             <Header />
-            <div className='container mb-5 '>
+            <div className='container mt-3' style={{marginBottom:"5.5rem"}}>
                 <div>
                     <p className='text-2'>Find the Top <span style={{ color: "#0077FF" }}>Professionals</span> for you with super <span style={{ color: "#0077FF" }}>speed !</span></p>
                 </div>
@@ -161,8 +161,8 @@ const ClientsHome = () => {
                         </a>
                     </div>
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </>
     )
 }
