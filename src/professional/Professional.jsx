@@ -4,10 +4,8 @@ import Header from "../components/Header";
 
 const Professional = () => {
   return (
-    <div>
-      <Header 
-        post="Post a GIG"
-      />
+    <div className="container">
+      <Header post="Post a GIG" />
       <ProfessionalHome />
     </div>
   );

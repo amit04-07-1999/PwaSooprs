@@ -4,8 +4,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Professional from "./professional/Professional";
 import ClientsHome from "./Client/clientsHome";
+import Professional from "./professional/Professional";
 import ProjectPosting from "./Client/ProjectPosting";
 import Bio from "./Client/Bio";
+import ProfessionalHeader from "./components/ProfessionalHeader";
+import ProfessionalDetails from "./professional/ProfessionalDetails";
 import Chat from "./About/Chat";
 import Notification from "./About/Notification";
 import TermAndCondition from "./About/TermAndCondition";
@@ -30,6 +33,7 @@ function App() {
           <Route path="/gig-posting" element={<GigPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
+          <Route path="/prfessional-details" element={<ProfessionalDetails/>}/>
           <Route path="/chat" element={<Chat/>} />
           <Route path="/notification" element={<Notification />}></Route>
           <Route path="/termAndCondition" element={<TermAndCondition />}></Route>
