@@ -2,8 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const Header = () => {
+const Header = ({post}) => {
     return (
+        
         <div className="d-flex justify-content-center" style={{ backgroundColor: "#D4E3FC", borderRadius: "0 0 2rem 2rem", height: "5rem" }}>
             <div className="d-flex justify-content-between mt-3">
                 <img src='../Images/Ellipse 1.png' className='headImg' />
