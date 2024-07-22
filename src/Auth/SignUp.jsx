@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import Img from "../assets/Img";
 import { Icon } from 'react-icons-kit';
 import { eyeOff } from 'react-icons-kit/feather/eyeOff';
 import { eye } from 'react-icons-kit/feather/eye';
 import { Link } from "react-router-dom";
+import Img from "../../public/Images/Img";
+
+
 
 const SignUp = () => {
   const [password, setPassword] = useState("");

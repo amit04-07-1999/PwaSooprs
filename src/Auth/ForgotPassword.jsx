@@ -1,7 +1,8 @@
 import React from "react";
-import Forgotimage from "../Components/Forgotimage";
-import ForgotLoginLink from "../Components/ForgotLoginLink";
 import { Link } from "react-router-dom";
+import ForgotLoginLink from "../components/ForgotLoginLink";
+import Forgotimage from "../components/Forgotimage";
+
 
 const ForgotPassword = () => {
   return (

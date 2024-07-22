@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import ForgotLoginLink from "../Components/ForgotLoginLink";
-import Forgotimage from "../Components/Forgotimage";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
-import Img from "../assets/Img";
 import { Link } from "react-router-dom";
+import Img from "../../public/Images/Img";
+import ForgotLoginLink from "../components/ForgotLoginLink";
+import Forgotimage from "../components/Forgotimage";
+
+
+
+
+
 
 const NewPassword = () => {
   const [open, setOpen] = useState(false);
