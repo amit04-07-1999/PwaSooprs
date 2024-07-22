@@ -377,98 +377,98 @@ const MultipleButtons = ({ btn, handleClick, activeButton }) => {
   );
 };
 
-const Bio = () => {
-  const [activeButton, setActiveButton] = useState("");
-  const [data, setData] = useState({ title: "", content: "", component: null });
+// const Bio = () => {
+//   const [activeButton, setActiveButton] = useState("");
+//   const [data, setData] = useState({ title: "", content: "", component: null });
 
-  const handleClick = (btn) => {
-    setActiveButton(btn);
-    if (btn === "Company info") {
-      setData({
-        title: "Company Info",
-        content: "This is the Company info data.",
-        // component: <CompanyInfoComponent />,
-      });
-    } else if (btn === "Projects") {
-      setData({
-        title: "Projects",
-        content: "This is the Projects data.",
-        // component: <ProjectsComponent />,
-      });
-    } else if (btn === "Reviews") {
-      setData({
-        title: "Reviews",
-        content: "This is the Reviews data.",
-        // component: <ReviewsComponent />,
-      });
-    }
-  };
-  return (
-    <div className="container">
-      <img
-        src="./public/images/avtars.png"
-        alt="avtar"
-        style={{
-          height: "200px",
-          width: "200px",
-          textAlign: "center",
-          margin: "auto",
-          marginRight: "auto",
-          width: "50%",
-          display: "block",
-          marginTop: "4rem",
-        }}
-      />
-      <div className="text-center mt-3">
-        <p className="m-0" style={{ fontWeight: "600", fontSize: "24px" }}>
-          Leonardo
-        </p>
-        <p>
-          <span style={{ color: "#0077FF", fontSize: "16px" }}>
-            Director at
-          </span>{" "}
-          ABC Firms
-        </p>
-        <div className="d-flex justify-content-center gap-2">
-          <img
-            src="./public/images/rates.png"
-            alt="rating"
-            style={{ height: "20px", width: "20px" }}
-          />
-          <p>4.5/5</p>
-        </div>
-      </div>
-      <BioDetails
-        bio="Bio"
-        des="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
-          inventore amet veniam impedit. Cum, aliquid consectetur, tempora
-          incidunt facere non officiis deleniti voluptate modi quae vero
-          perferendis temporibus rerum saepe."
-      />
-      <ContactUs />
-      <div className="d-flex justify-content-between">
-        <MultipleButtons
-          btn="Company info"
-          handleClick={handleClick}
-          activeButton={activeButton}
-        />
-        <MultipleButtons
-          btn="Projects"
-          handleClick={handleClick}
-          activeButton={activeButton}
-        />
-        <MultipleButtons
-          btn="Reviews"
-          handleClick={handleClick}
-          activeButton={activeButton}
-        />
-      </div>
-      <div className="container mt-5 data-display">
-        {data.title && <h2>{data.title}</h2>}
-        {data.content && <p>{data.content}</p>}
-      </div>{" "}
-    </div>
-  );
-};
+//   const handleClick = (btn) => {
+//     setActiveButton(btn);
+//     if (btn === "Company info") {
+//       setData({
+//         title: "Company Info",
+//         content: "This is the Company info data.",
+//         // component: <CompanyInfoComponent />,
+//       });
+//     } else if (btn === "Projects") {
+//       setData({
+//         title: "Projects",
+//         content: "This is the Projects data.",
+//         // component: <ProjectsComponent />,
+//       });
+//     } else if (btn === "Reviews") {
+//       setData({
+//         title: "Reviews",
+//         content: "This is the Reviews data.",
+//         // component: <ReviewsComponent />,
+//       });
+//     }
+//   };
+//   return (
+//     <div className="container">
+//       <img
+//         src="./public/images/avtars.png"
+//         alt="avtar"
+//         style={{
+//           height: "200px",
+//           width: "200px",
+//           textAlign: "center",
+//           margin: "auto",
+//           marginRight: "auto",
+//           width: "50%",
+//           display: "block",
+//           marginTop: "4rem",
+//         }}
+//       />
+//       <div className="text-center mt-3">
+//         <p className="m-0" style={{ fontWeight: "600", fontSize: "24px" }}>
+//           Leonardo
+//         </p>
+//         <p>
+//           <span style={{ color: "#0077FF", fontSize: "16px" }}>
+//             Director at
+//           </span>{" "}
+//           ABC Firms
+//         </p>
+//         <div className="d-flex justify-content-center gap-2">
+//           <img
+//             src="./public/images/rates.png"
+//             alt="rating"
+//             style={{ height: "20px", width: "20px" }}
+//           />
+//           <p>4.5/5</p>
+//         </div>
+//       </div>
+//       <BioDetails
+//         bio="Bio"
+//         des="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt
+//           inventore amet veniam impedit. Cum, aliquid consectetur, tempora
+//           incidunt facere non officiis deleniti voluptate modi quae vero
+//           perferendis temporibus rerum saepe."
+//       />
+//       <ContactUs />
+//       <div className="d-flex justify-content-between">
+//         <MultipleButtons
+//           btn="Company info"
+//           handleClick={handleClick}
+//           activeButton={activeButton}
+//         />
+//         <MultipleButtons
+//           btn="Projects"
+//           handleClick={handleClick}
+//           activeButton={activeButton}
+//         />
+//         <MultipleButtons
+//           btn="Reviews"
+//           handleClick={handleClick}
+//           activeButton={activeButton}
+//         />
+//       </div>
+//       <div className="container mt-5 data-display">
+//         {data.title && <h2>{data.title}</h2>}
+//         {data.content && <p>{data.content}</p>}
+//       </div>{" "}
+//     </div>
+//   );
+// };
 
 export default Bio;

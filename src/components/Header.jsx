@@ -4,13 +4,7 @@ import { Link } from "react-router-dom";
 
 const Header = ({post}) => {
     return (
-        <div className="d-flex justify-content-between mt-3">
-            <img src='../Images/Ellipse 1.png' className='headImg' />
-            <p className='head'>Hello, Jacob Collis</p>
-            {/* <img src='../Images/wavehand.png' className='wavehand'/> */}
-            <span className='wavehand'>&#128075;</span>
-            <Link><button className='text-1'>{post}</button></Link>
-            <span style={{ marginTop: "0.5vh" }}>🔔</span>
+        
         <div className="d-flex justify-content-center" style={{ backgroundColor: "#D4E3FC", borderRadius: "0 0 2rem 2rem", height: "5rem" }}>
             <div className="d-flex justify-content-between mt-3">
                 <img src='../Images/Ellipse 1.png' className='headImg' />
@@ -20,7 +14,6 @@ const Header = ({post}) => {
                 <Link to="/project-posting"><button className='text-1'>Post a Project</button></Link>
                 <span style={{ marginTop: "0.3vh" }}><i class="bi bi-bell-fill text-primary fs-3"></i></span>
             </div>
-        </div>
         </div>
     )
 }
