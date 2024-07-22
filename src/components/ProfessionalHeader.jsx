@@ -1,6 +1,12 @@
+
 import React from "react";
 
 const ProfessionalHeader = () => {
+  const history = useHistory();
+
+  const goBack = () => {
+    history.goBack();
+  };
   return (
     <div>
         <div className="d-flex justify-content-between p-1 mt-2">

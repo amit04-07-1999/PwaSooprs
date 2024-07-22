@@ -3,7 +3,7 @@ import IndainFlag from "../../public/Images/indianflag.png";
 
 const UserDetails = () => {
   return (
-    <div className="d-flex justify-content-between mt-2">
+    <div className="d-flex justify-content-between mt-3">
       <div>
         <i class="bi bi-person-lines-fill"></i>
         <span className="fw-bold mx-2">Identity Verified</span>
@@ -28,6 +28,9 @@ const ClientDetails = () => {
           </span>
         </div>
       </div>
+      <UserDetails />
+      <UserDetails />
+      <UserDetails />
       <UserDetails />
     </div>
   );

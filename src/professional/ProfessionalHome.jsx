@@ -83,7 +83,7 @@ const ProfessionalHome = () => {
           <Categrorys img={hand} title="Graphic Designer" />
         </div>
       </div>
-      <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>
+      <Link to="/professional-details" style={{textDecoration:"none", color:"inherit"}}>
         <SkillsCard />
       </Link>
       <Link to="/prfessional-details" style={{textDecoration:"none", color:"inherit"}}>

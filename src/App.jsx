@@ -3,14 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import ClientsHome from "./Client/clientsHome";
-import Professional from "./professional/Professional";
 import ProjectPosting from "./Client/ProjectPosting";
 import Bio from "./Client/Bio";
-import ProfessionalHeader from "./components/ProfessionalHeader";
-import ProfessionalDetails from "./professional/ProfessionalDetails";
-import Chat from "./About/Chat";
-import Notification from "./About/Notification";
-import TermAndCondition from "./About/TermAndCondition";
 import ProfileSection from "./Auth/ProfileSection";
 import Login from "./Auth/Login";
 import SignUp from "./Auth/SignUp";
@@ -21,6 +15,8 @@ import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
 import PersonalChat from "./About/PersonalChat";
+import GigsScreen from "./Gigslist/GigsScreen";
+import GigPageDetailed from "./Gigslist/GigPageDetailed";
 
 function App() {
   return (
@@ -45,6 +41,16 @@ function App() {
           <Route path="/editprofile" element={<EditProfile />} />
           <Route path="/personalchat" element={<PersonalChat />} />
           <Route path="/" element={<ProfileSection />} />
+          <Route path="/gigs" element={<GigsScreen/>}/>
+          <Route path="/gigpagedetailed" element={<GigPageDetailed/>}/>
+          <Route path="/profile" element={<ProfileSection/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/newpassword" element={<NewPassword/>} />
+          <Route path="/forgotpassword" element={<ForgotPassword/>} />
+          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
+          <Route path="/editprofile" element={<EditProfile/>} />
+
 
           <Route path="/error404" element={<Error404 />} />
         </Routes>
