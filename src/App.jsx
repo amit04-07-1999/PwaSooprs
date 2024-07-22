@@ -18,6 +18,7 @@ import ForgotPaddwordOtp from "./Auth/ForgotPaddwordOtp";
 import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
+import PrivacyPolicy from "./About/PrivacyPolicy";
 
 function App() {
   return (
@@ -38,7 +39,7 @@ function App() {
           <Route path="/newpassword" element={<NewPassword/>} />
           <Route path="/forgotpassword" element={<ForgotPassword/>} />
           <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
-          <Route path="/editprofile" element={<EditProfile/>} />
+          <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
 
 
           <Route path="/error404" element={<Error404 />} />
