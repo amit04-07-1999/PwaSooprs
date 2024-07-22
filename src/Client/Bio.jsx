@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './style.css'
 import { Link } from 'react-router-dom';
+import SkillsCard from '../components/SkillsCard';
 
 
 const Bio = () => {
@@ -103,8 +104,8 @@ const Bio = () => {
           )}
           {activeSection === 'Projects' &&
             <div>
-              <div className=" mt-5">
-                <div className="card shadow-sm border-0">
+              {/* <div className=" mt-5">
+                <div className="card shadow-sm border-0" style={{width:"100%"}}>
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-between align-items-start">
                       <div>
@@ -144,7 +145,7 @@ const Bio = () => {
                 </div>
               </div>
               <div className=" mt-5">
-                <div className="card shadow-sm border-0">
+                <div className="card shadow-sm border-0" style={{width:"100%"}}>
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-between align-items-start">
                       <div>
@@ -182,7 +183,8 @@ const Bio = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <SkillsCard/>
             </div>}
           {activeSection === 'Reviews' &&
             <div>

@@ -16,17 +16,21 @@ import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
 import GigsScreen from "./Gigslist/GigsScreen";
 import GigPageDetailed from "./Gigslist/GigPageDetailed";
+import Professional from './professional/Professional';
+import ProfessionalDetails from "./professional/ProfessionalDetails";
 
 function App() {
   return (
     <div className="" style={{ maxWidth: "430px" }}>
       <BrowserRouter>
         <Routes>
+          <Route path="/" element={<ProfileSection />}></Route>
           <Route path="/home" element={<ClientsHome />}></Route>
           <Route path="/project-posting" element={<ProjectPosting />}></Route>
           <Route path="/gig-posting" element={<GigPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
+          <Route path="/professional-details" element={<ProfessionalDetails />} />
           <Route path="/gigs" element={<GigsScreen/>}/>
           <Route path="/gigpagedetailed" element={<GigPageDetailed/>}/>
           <Route path="/profile" element={<ProfileSection/>} />
