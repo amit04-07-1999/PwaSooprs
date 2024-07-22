@@ -32,9 +32,13 @@
 
 }
 
+.catSectionContainer::-webkit-scrollbar{
+display: none;
+}
+
 .catSectionItem{
 
-    background-color: antiquewhite;
+    background-color: whitesmoke;
     width:220px;
     height:60px;
     border-radius: 25px;
@@ -42,6 +46,32 @@
     
 
 }
+
+.scrollable-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    padding-bottom: 10px; /* Optional: To avoid the scrollbar overlapping content */
+    width: 100%;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.card {
+    width:350px;
+    margin-right: 30px;
+    flex: 0 0 auto; /* Prevent the cards from shrinking */
+    
+}
+
+.card-img-top {
+    background-color: #d1d1e0;
+    height: 15rem;
+}
+
 
 
      
