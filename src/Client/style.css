@@ -1,0 +1,81 @@
+.headImg {
+  width: 43px;
+  height: 43px;
+  top: 70px;
+  left: 20px;
+  gap: 0px;
+  opacity: 0px;
+}
+.head {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 0.5rem;
+}
+.wavehand {
+  width: 5rem;
+  height: 10vh;
+  top: 79px;
+  left: 201px;
+  gap: 0px;
+  opacity: 0px;
+  margin-top: 7px;
+}
+.text-1 {
+  height: 2.5rem;
+  border: none;
+  background-color: #f78000;
+  color: white;
+  border-radius: 1vh;
+  width: 8rem;
+  margin-right: 0.5rem;
+}
+.text-2 {
+  width: 349px;
+  height: 72px;
+  top: 165px;
+  left: 20px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+}
+.search-bar {
+  width: 332px;
+  height: 45px;
+  padding-left: 2rem;
+}
+.filter-1 {
+  width: 100%;
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(0deg, #0476fc, #0476fc);
+  color: white;
+}
+.headImg-1 {
+  width: 100%;
+  height: 179px;
+  margin-top: 2rem;
+}  
+/* Add this CSS to your stylesheet or in a <style> tag in your component */
+.custom-radio .form-check-input:checked {
+  background-color: #0d6efd; /* Bootstrap's primary color */
+  border-color: #0d6efd;
+}
+
+.custom-radio .form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25); /* Matching shadow for primary color */
+}
+.line{
+  width: 20%;
+  border-top: 3px solid rgb(172, 167, 167);
+  margin-top: 2rem;
+}

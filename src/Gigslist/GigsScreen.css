@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+.gig-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #333; 
+  }
+
+  .search-bar::placeholder {
+    color: lightgray; 
+    opacity: 1;
+  }
+
+  .cardText{
+
+    font-family: 'Roboto', sans-serif;
+    color:#FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.25px;
+
+  }
+
+.exploreCard {
+        height: 190px;
+        width: 390px;
+        border-radius: 8px;
+        background: linear-gradient(to right, #FF9259 0%, #E88754 100%);
+
+}
+
+.catSectionContainer::-webkit-scrollbar{
+display: none;
+}
+
+.catSectionItem{
+
+    background-color: whitesmoke;
+    width:220px;
+    height:60px;
+    border-radius: 25px;
+    padding:11px;
+    
+
+}
+
+.scrollable-container {
+    display: flex;
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+    padding-bottom: 10px; /* Optional: To avoid the scrollbar overlapping content */
+    width: 100%;
+}
+
+.scrollable-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+}
+
+.card {
+    width:350px;
+    margin-right: 30px;
+    flex: 0 0 auto; /* Prevent the cards from shrinking */
+    
+}
+
+.card-img-top {
+    background-color: #d1d1e0;
+    height: 15rem;
+}
+
+
+
+     
