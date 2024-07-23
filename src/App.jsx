@@ -14,7 +14,7 @@ import ForgotPaddwordOtp from "./Auth/ForgotPaddwordOtp";
 import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
-<<<<<<< HEAD
+
 import PrivacyPolicy from "./About/PrivacyPolicy";
 import ContactUs from "./About/ContactUs";
 
