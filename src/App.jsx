@@ -17,7 +17,7 @@ import GigPosting from "./Client/GigPosting";
 <<<<<<< HEAD
 import PrivacyPolicy from "./About/PrivacyPolicy";
 import ContactUs from "./About/ContactUs";
-=======
+
 import GigsScreen from "./Gigslist/GigsScreen";
 import GigPageDetailed from "./Gigslist/GigPageDetailed";
 import Professional from './professional/Professional';
@@ -43,12 +43,9 @@ function App() {
           <Route path="/newpassword" element={<NewPassword/>} />
           <Route path="/forgotpassword" element={<ForgotPassword/>} />
           <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
-<<<<<<< HEAD
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
           <Route path="/ContactUs" element={<ContactUs/>} />
-=======
           <Route path="/editprofile" element={<EditProfile/>} />
->>>>>>> fb94032a58534ba460e11122118615cdd93f6f04
 
 
           <Route path="/error404" element={<Error404 />} />
