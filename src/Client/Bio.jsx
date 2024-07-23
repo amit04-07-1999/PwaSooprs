@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import './style.css'
+import { Link } from 'react-router-dom';
+import SkillsCard from '../components/SkillsCard';
 
 
 const Bio = () => {
@@ -38,7 +40,10 @@ const Bio = () => {
           <p>4.5/5</p>
         </div>
         <div className="p-3">
-          <h5 className='fw-bold'>Bio</h5>
+          <div className='d-flex gap-5'>
+            <h5 className='fw-bold'>Bio</h5>
+            <Link to="/editprofile"><i class="bi bi-pencil-square"></i></Link>
+          </div>
           <p>
             Hello! I’m John Doe, a passionate and skilled web developer with over 8 years of experience crafting dynamic, responsive, and user-friendly websites. With a deep understanding of both front-end and back-end development, I have the expertise to bring any digital vision to life.
           </p>
@@ -99,8 +104,8 @@ const Bio = () => {
           )}
           {activeSection === 'Projects' &&
             <div>
-              <div className=" mt-5">
-                <div className="card shadow-sm border-0">
+              {/* <div className=" mt-5">
+                <div className="card shadow-sm border-0" style={{width:"100%"}}>
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-between align-items-start">
                       <div>
@@ -140,7 +145,7 @@ const Bio = () => {
                 </div>
               </div>
               <div className=" mt-5">
-                <div className="card shadow-sm border-0">
+                <div className="card shadow-sm border-0" style={{width:"100%"}}>
                   <div className="card-body p-4">
                     <div className="d-flex justify-content-between align-items-start">
                       <div>
@@ -178,7 +183,8 @@ const Bio = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
+              <SkillsCard/>
             </div>}
           {activeSection === 'Reviews' &&
             <div>
@@ -332,50 +338,50 @@ const Bio = () => {
   );
 };
 
-const ContactUs = ({}) => {
-  return (
-    <div className="container">
-      <div className="d-flex justify-content-between">
-        <div>
-          <i class="bi bi-envelope-fill text-primary"></i>
-          <span style={{ fontSize: "14px" }}> info@company.com</span>
-        </div>
-        <div>
-          <i class="bi bi-telephone-fill text-primary"></i>
-          <span style={{ fontSize: "14px" }}> 123456899</span>
-        </div>
-        <div>
-          <i class="bi bi-geo-alt-fill text-primary"></i>
-          <span style={{ fontSize: "14px" }}> New Delhi</span>
-        </div>
-      </div>
-    </div>
-  );
-};
+// const ContactUs = ({}) => {
+//   return (
+//     <div className="container">
+//       <div className="d-flex justify-content-between">
+//         <div>
+//           <i class="bi bi-envelope-fill text-primary"></i>
+//           <span style={{ fontSize: "14px" }}> info@company.com</span>
+//         </div>
+//         <div>
+//           <i class="bi bi-telephone-fill text-primary"></i>
+//           <span style={{ fontSize: "14px" }}> 123456899</span>
+//         </div>
+//         <div>
+//           <i class="bi bi-geo-alt-fill text-primary"></i>
+//           <span style={{ fontSize: "14px" }}> New Delhi</span>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 
-const MultipleButtons = ({ btn, handleClick, activeButton }) => {
-  return (
-    <div className="container mt-5">
-      <button
-        onClick={() => handleClick(btn)}
-        style={{
-          backgroundColor: activeButton === btn ? "blue" : "white",
-          color: activeButton === btn ? "white" : "black",
-          borderRadius: "100px",
-          fontSize: "14px",
-          fontWeight: "500",
-          letterSpacing: "1px",
-          width: "120px",
-          height: "40px",
-          border: "none",
-          cursor: "pointer",
-        }}
-      >
-        {btn}
-      </button>
-    </div>
-  );
-};
+// const MultipleButtons = ({ btn, handleClick, activeButton }) => {
+//   return (
+//     <div className="container mt-5">
+//       <button
+//         onClick={() => handleClick(btn)}
+//         style={{
+//           backgroundColor: activeButton === btn ? "blue" : "white",
+//           color: activeButton === btn ? "white" : "black",
+//           borderRadius: "100px",
+//           fontSize: "14px",
+//           fontWeight: "500",
+//           letterSpacing: "1px",
+//           width: "120px",
+//           height: "40px",
+//           border: "none",
+//           cursor: "pointer",
+//         }}
+//       >
+//         {btn}
+//       </button>
+//     </div>
+//   );
+// };
 
 // const Bio = () => {
 //   const [activeButton, setActiveButton] = useState("");

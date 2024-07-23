@@ -196,7 +196,7 @@ const SignUp = () => {
           </div>
         </form>
       </div>
-      <button
+      <Link to="/login"><button
         type="submit"
         className="btn btn-primary btn-block btn-signup"
         style={{
@@ -208,7 +208,7 @@ const SignUp = () => {
         }}
       >
         Sign Up
-      </button>
+      </button></Link>
       <div style={{ textAlign: "center", marginTop: "10px",position:"absolute",top:"813px",left:"90px" }}>
           <p>Don't have a Account? 
           <Link to="/login" style={{textDecoration:"none"}}>

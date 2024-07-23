@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-const Header = ({post}) => {
+const Header = () => {
     return (
         
         <div className="d-flex justify-content-center" style={{ backgroundColor: "#D4E3FC", borderRadius: "0 0 2rem 2rem", height: "5rem" }}>
             <div className="d-flex justify-content-between mt-3">
-                <img src='../Images/Ellipse 1.png' className='headImg' />
+                <Link to ="/bio"><img src='../Images/Ellipse 1.png' className='headImg' /></Link>
                 <p className='head'>Hello, Jacob Collis</p>
                 {/* <img src='../Images/wavehand.png' className='wavehand'/> */}
                 <span className='wavehand'>&#128075;</span>

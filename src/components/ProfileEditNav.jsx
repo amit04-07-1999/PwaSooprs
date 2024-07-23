@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { FaArrowLeft, FaUpload } from "react-icons/fa";
 import Img from "../../public/Images/Img";
+import { Link } from "react-router-dom";
 
-const ProfileEditNav = () => {
+const ProfileEditNav = ({backProfile}) => {
   const [profileImage, setProfileImage] = useState("Images/Ellipse 1.png");
 
   const handleImageChange = (e) => {
@@ -30,16 +31,18 @@ const ProfileEditNav = () => {
           
         }}
       >
+      <Link to="/editprofile" style={{textDecoration:"none",color:"rgba(17, 16, 16, 1)"}}>
         <FaArrowLeft style={{ width: "21px", height: "21px" }} />
+        </Link>
         <h3
           style={{
-            width: "123px",
+            width: "250px",
             height: "24px",
             fontWeight: "500",
             fontSize: "24px",
           }}
         >
-          Edit Profile
+          {backProfile}
         </h3>
       </div>
       <div
