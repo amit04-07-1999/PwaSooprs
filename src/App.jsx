@@ -21,6 +21,7 @@ import EditProfile from "./EditProfile/EditProfile";
 import Error404 from "./Client/Error404";
 import GigPosting from "./Client/GigPosting";
 import PrivacyPolicy from "./About/PrivacyPolicy";
+import ContactUs from "./About/ContactUs";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword/>} />
           <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+          <Route path="/ContactUs" element={<ContactUs/>} />
 
 
           <Route path="/error404" element={<Error404 />} />
