@@ -22,7 +22,6 @@ import GigsScreen from "./Gigslist/GigsScreen";
 import GigPageDetailed from "./Gigslist/GigPageDetailed";
 import Professional from './professional/Professional';
 import ProfessionalDetails from "./professional/ProfessionalDetails";
->>>>>>> fb94032a58534ba460e11122118615cdd93f6f04
 
 function App() {
   return (
