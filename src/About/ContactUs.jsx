@@ -74,7 +74,7 @@ const ContactUs = () => {
                     <div className="d-flex my-3 justify-content-between align-items-center">
                         <div className="d-flex flex-column">
                             <p
-                                className="m-0 pe-2"
+                                className="m-0 pe-1"
                                 style={{
                                     fontSize: "1rem",
                                     fontWeight: "500",
@@ -91,8 +91,8 @@ const ContactUs = () => {
                 </div>
             </div>
             {/* ***************ContactUs Card****************** */}
-            <div className="container">
-                <div className="card mx-1">
+            <div className="container px-3">
+                <div className="card w-100 ">
                     <div className="row mx-3">
                         <div className="col d-flex justify-content-center align-items-center">
                             <img className='' style={{ width: "116px" }} src="./Images/contactUs.png" alt="contactUs" />

@@ -17,6 +17,11 @@ import GigPosting from "./Client/GigPosting";
 
 import PrivacyPolicy from "./About/PrivacyPolicy";
 import ContactUs from "./About/ContactUs";
+import TermAndCondition from "./About/TermAndCondition";
+import AboutUs from "./About/AboutUs";
+
+import Notification from "./About/Notification";
+import Chat from "./About/Chat";
 
 import GigsScreen from "./Gigslist/GigsScreen";
 import GigPageDetailed from "./Gigslist/GigPageDetailed";
@@ -44,8 +49,13 @@ function App() {
           <Route path="/forgotpassword" element={<ForgotPassword/>} />
           <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp/>} />
           <Route path="/PrivacyPolicy" element={<PrivacyPolicy/>} />
+          <Route path="/TermAndCondition" element={<TermAndCondition/>} />
           <Route path="/ContactUs" element={<ContactUs/>} />
+          <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/editprofile" element={<EditProfile/>} />
+          <Route path="/Chat" element={<Chat />} />
+          <Route path="/Notification" element={<Notification />} />
+
 
 
           <Route path="/error404" element={<Error404 />} />
