@@ -12,7 +12,7 @@ const Error404 = () => {
             <p className='d-flex justify-content-center mt-5'>We’re Sorry, the page you requested could not be found</p>
             <p className='d-flex justify-content-center text-muted'>Please go back to the home page!</p>
             <div className='d-flex justify-content-center'>
-                <Link to="/"><button className=' form-control bg-primary text-white' style={{ width: "24rem", height: "4rem", marginTop: "5rem" }}>Back to Home Screen</button></Link>
+                <Link to="/home"><button className=' form-control bg-primary text-white' style={{ width: "24rem", height: "4rem", marginTop: "5rem" }}>Back to Home Screen</button></Link>
             </div>
             <Footer />
 

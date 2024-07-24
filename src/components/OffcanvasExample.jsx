@@ -11,7 +11,8 @@ function OffcanvasExample() {
 
   return (
     <>
-      <Button variant="primary" className='filter-1 bi bi-filter' onClick={handleShow}>
+      <Button variant="primary" className='filter-1 ' onClick={handleShow}>
+        <img src='../Images/searchicon.png' height="20rem"/>
       </Button>
 
       <Offcanvas show={show} onHide={handleClose} placement="end" style={{ height: "50rem", marginTop: "4rem", borderRadius: "2rem 0 0 2rem" }}>

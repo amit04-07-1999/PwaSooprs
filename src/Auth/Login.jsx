@@ -56,7 +56,7 @@ const Login = () => {
               }}
             />
           </div>
-          <button
+          <Link to="/home"> <button
             type="submit"
             className="btn btn-block btn-signup"
             style={{
@@ -68,29 +68,29 @@ const Login = () => {
             }}
           >
             Login
-          </button>
+          </button></Link>
         </form>
-      <Link to="/forgotpassword" style={{textDecoration:"none",  textAlign: "end",}}>
-        <span
-          className=""
-          style={{
-            fontSize: "14px",
-            lineHeight: "20px",
-            fontWeight: "600",
-          
-            color: "rgba(24, 73, 214, 1)",
-           
-          }}
-        >
-          Forgot Password?
-        </span>
+        <Link to="/forgotpassword" style={{ textDecoration: "none", textAlign: "end", }}>
+          <span
+            className=""
+            style={{
+              fontSize: "14px",
+              lineHeight: "20px",
+              fontWeight: "600",
+
+              color: "rgba(24, 73, 214, 1)",
+
+            }}
+          >
+            Forgot Password?
+          </span>
         </Link>
         <div style={{ textAlign: "center", marginTop: "20px" }}>
           <p>
-          Or signUp using 
-          <Link to="/signup" style={{textDecoration:"none"}}>
-               <span   className="text-primary ms-2">SIGN UP</span>
-          </Link>
+            Or signUp using
+            <Link to="/signup" style={{ textDecoration: "none" }}>
+              <span className="text-primary ms-2">SIGN UP</span>
+            </Link>
           </p>
         </div>
       </div>

@@ -188,6 +188,7 @@ const SignUp = () => {
             </div>
           </div>
         </form>
+<<<<<<< HEAD
 
         <button
           type="submit"
@@ -209,6 +210,27 @@ const SignUp = () => {
             <Link to="/login" style={{ textDecoration: "none" }}>
               <span className="text-primary ms-2">LOGIN NOW</span>
             </Link>
+=======
+      </div>
+      <Link to="/login"><button
+        type="submit"
+        className="btn btn-primary btn-block btn-signup"
+        style={{
+          width: "344px",
+          height: "54px",
+          position: "absolute",
+          top: "727px",
+          left: "42px",
+        }}
+      >
+        Sign Up
+      </button></Link>
+      <div style={{ textAlign: "center", marginTop: "10px",position:"absolute",top:"813px",left:"90px" }}>
+          <p>Don't have a Account? 
+          <Link to="/login" style={{textDecoration:"none"}}>
+            <span className="text-primary ms-2"> LOGIN NOW</span>
+          </Link>
+>>>>>>> 70e4574ee003988f0118c5db99363cc157e46874
           </p>
         </div>
       </div>

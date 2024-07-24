@@ -38,8 +38,13 @@ const ForgotPassword = () => {
           style={{height:"54px",border:"1px solid rgba(121, 121, 121, 1)"}}
         />
       </div>
+<<<<<<< HEAD
       <Link to="/forgototp">
           <button style={{height:"54px", width:"100%" ,fontSize:"16px", fontWeight:"700",background:"rgba(0, 119, 255, 1)",color:"white"}} class="btn" type="button">Send</button>
+=======
+      <Link to="/forgotpasswordotp">
+          <button style={{height:"54px", width:"100%" ,fontSize:"16px", fontWeight:"700"}} class="btn btn-primary" type="button">Send</button>
+>>>>>>> 70e4574ee003988f0118c5db99363cc157e46874
           </Link>
     </div>
     <ForgotLoginLink/>

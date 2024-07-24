@@ -77,13 +77,19 @@ const ProfileSection = () => {
           </button>
         </Link>
         <span style={{ color: "#407BFF", lineHeight: "45px" }}>or</span>
+<<<<<<< HEAD
         <button
           class="btn w-100 rounded-pill "
           style={{ height: "57px", fontWeight: "500",background:"rgba(0, 119, 255, 1)",color:"white" }}
+=======
+        <Link to="/login"><button
+          class="btn btn-primary w-100 rounded-pill "
+          style={{ height: "57px", fontWeight: "500" }}
+>>>>>>> 70e4574ee003988f0118c5db99363cc157e46874
           type="button"
         >
-          Button
-        </button>
+          Login
+        </button></Link>
       </div>
     </>
   );
