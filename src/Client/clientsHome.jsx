@@ -89,7 +89,7 @@ const ClientsHome = () => {
 
                 </div>
                 <div className='mb-5'>
-                    <div className='d-flex mt-5'>
+                    <div className='d-flex mt-3'>
                         <p className='text-2'>Checkout <span style={{ color: "#0077FF" }}>GIGS</span> </p>
                         <span style={{ color: "#0077FF" }}>See all</span>
                     </div>
