@@ -18,8 +18,8 @@ const Login = () => {
         }}
       >
         <h1
-          className="text-primary  mb-4"
-          style={{ fontSize: "32px", fontWeight: "500", lineHeight: "48px" }}
+          className=" mb-4"
+          style={{ fontSize: "32px", fontWeight: "500", lineHeight: "48px",color:"rgba(0, 119, 255, 1)" }}
         >
           Login
         </h1>
@@ -58,11 +58,13 @@ const Login = () => {
           </div>
           <Link to="/home"> <button
             type="submit"
-            className="btn btn-primary btn-block btn-signup"
+            className="btn btn-block btn-signup"
             style={{
               width: "344px",
               height: "54px",
               marginBottom: "20px",
+              background:"rgba(0, 119, 255, 1)",
+              color:"white"
             }}
           >
             Login

@@ -18,17 +18,15 @@ const NewPassword = () => {
 
   return (
     <div
+    className="container"
       style={{
-        width: "346px",
-        height: "650px",
-        position: "absolute",
-        top: "141px",
-        left: "42px",
+       marginTop:"20%"
+  
       }}
     >
       <Forgotimage forgotdes="Create a new password" />
 
-      <div className="mt-5" style={{ width: "344px", height: "154px" }}>
+      <div className="mt-5">
         <div className="mb-4">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Password
@@ -46,7 +44,8 @@ const NewPassword = () => {
         <div className="mb-4">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Re-Password
-          </label>
+            </label>
+     
           <input
             type="password"
             className="form-control"

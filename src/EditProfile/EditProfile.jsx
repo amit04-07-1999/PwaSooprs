@@ -39,10 +39,13 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-          <Link to="/managedetail" style={{textDecoration:"none",color:"rgba(17, 16, 16, 1)"}}>
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>
-              Manage Details
-            </p>
+            <Link
+              to="/managedetail"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>
+                Manage Details
+              </p>
             </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
@@ -55,10 +58,13 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-          <Link to="/managepassword" style={{textDecoration:"none",color:"rgba(17, 16, 16, 1)"}}>
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>
-              Manage Password
-            </p>
+            <Link
+              to="/managepassword"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>
+                Manage Password
+              </p>
             </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
@@ -80,11 +86,15 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-         
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>
-              Add card details
-            </p>
-           
+            <Link
+              to="/credits"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>
+                Add card details
+              </p>
+            </Link>
+
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
         </div>
@@ -106,10 +116,13 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-           <Link to="/bankdetails" style={{textDecoration:"none",color:"rgba(17, 16, 16, 1)"}}>
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>
-              Add Bank details
-            </p>
+            <Link
+              to="/bankdetails"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>
+                Add Bank details
+              </p>
             </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
@@ -132,10 +145,13 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-          <Link to="/manageportfolio" style={{textDecoration:"none",color:"rgba(17, 16, 16, 1)"}}>
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>
-              Manage Portfolio
-            </p>
+            <Link
+              to="/manageportfolio"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>
+                Manage Portfolio
+              </p>
             </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
@@ -148,7 +164,12 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>Skills</p>
+            <Link
+              to="/skills"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>Skills</p>
+            </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
           <div
@@ -160,8 +181,11 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-          <Link to="/addexperience" style={{textDecoration:"none",color:"rgba(17, 16, 16, 1)"}}>
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>Experience</p>
+            <Link
+              to="/addexperience"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>Experience</p>
             </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
@@ -184,9 +208,14 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>
-              Manage Services
-            </p>
+            <Link
+              to="/manageservices"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>
+                Manage Services
+              </p>
+            </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
         </div>
@@ -208,7 +237,13 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>Resume</p>
+            <Link
+              to="/resumeupload"
+              style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}
+            >
+              <p style={{ fontSize: "16px", fontWeight: "500" }}>Resume</p>
+            </Link>
+
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
           <div
@@ -220,7 +255,9 @@ const EditProfile = () => {
               fontWeight: "400",
             }}
           >
-            <p style={{ fontSize: "16px", fontWeight: "500" }}>Academics</p>
+            <Link to="/addacademics"  style={{ textDecoration: "none", color: "rgba(17, 16, 16, 1)" }}>
+              <p style={{ fontSize: "16px", fontWeight: "500", }}>Academics</p>
+            </Link>
             <IoIosArrowForward style={{ fontSize: "16px" }} />
           </div>
         </div>

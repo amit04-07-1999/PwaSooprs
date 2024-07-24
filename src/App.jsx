@@ -25,8 +25,16 @@ import Chat from "./About/Chat";
 
 import GigsScreen from "./Gigslist/GigsScreen";
 import GigPageDetailed from "./Gigslist/GigPageDetailed";
+<<<<<<< HEAD
+import ResumeUpload from "./EditProfile/ResumeUpload";
+import Academics from "./EditProfile/Academics";
+import Skills from "./EditProfile/Skills";
+import ManageServices from "./EditProfile/ManageServices";
+import Credits from "./EditProfile/Credits";
+=======
 import Professional from './professional/Professional';
 import ProfessionalDetails from "./professional/ProfessionalDetails";
+>>>>>>> 70e4574ee003988f0118c5db99363cc157e46874
 
 function App() {
   return (
@@ -39,6 +47,34 @@ function App() {
           <Route path="/gig-posting" element={<GigPosting />}></Route>
           <Route path="/bio" element={<Bio />} />
           <Route path="/professional" element={<Professional />} />
+<<<<<<< HEAD
+          <Route path="/profile" element={<ProfileSection />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/newpassword" element={<NewPassword />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp />} />
+          <Route path="/editprofile" element={<EditProfile />} />
+          <Route path="/managedetail" element={<ManageDetail />} />
+          <Route path="/managepassword" element={<ManagePassword />} />
+          <Route path="/bankdetails" element={<BankDetails />} />
+          <Route path="/manageportfolio" element={<ManagePortfolio />} />
+          <Route path="/addexperience" element={<AddExperience />} />
+          <Route path="/gigs" element={<GigsScreen />} />
+          <Route path="/gigpagedetailed" element={<GigPageDetailed />} />
+          <Route path="/profile" element={<ProfileSection />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/newpassword" element={<NewPassword />} />
+          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/forgotpasswordotp" element={<ForgotPaddwordOtp />} />
+          <Route path="/editprofile" element={<EditProfile />} />
+          <Route path="/resumeupload" element={<ResumeUpload />} />
+          <Route path="/addacademics" element={<Academics />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/manageservices" element={<ManageServices />} />
+          <Route path="/credits" element={<Credits />} />
+=======
           <Route path="/professional-details" element={<ProfessionalDetails />} />
           <Route path="/gigs" element={<GigsScreen/>}/>
           <Route path="/gigpagedetailed" element={<GigPageDetailed/>}/>
@@ -58,6 +94,7 @@ function App() {
 
 
 
+>>>>>>> 70e4574ee003988f0118c5db99363cc157e46874
           <Route path="/error404" element={<Error404 />} />
         </Routes>
       </BrowserRouter>
