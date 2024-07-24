@@ -52,7 +52,7 @@ const ProfileEditNav = ({backProfile}) => {
           alignItems: "center",
           position: "absolute",
           top: "150px",
-          left: "50%",
+          left: "210px",
           transform: "translateX(-50%)",
         }}
       >

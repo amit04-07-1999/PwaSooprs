@@ -3,8 +3,6 @@ import { Icon } from 'react-icons-kit';
 import { eyeOff } from 'react-icons-kit/feather/eyeOff';
 import { eye } from 'react-icons-kit/feather/eye';
 import { Link } from "react-router-dom";
-import Img from "../../public/Images/Img";
-
 
 
 const SignUp = () => {
@@ -36,33 +34,28 @@ const SignUp = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1
-        className="text-primary"
+        
         style={{
           width: "121px",
           height: "48px",
-          position: "absolute",
-          top: "73px",
-          left: "42px",
           font: "poppins",
           fontWeight: "500",
           fontSize: "32px",
           lineHeight: "48px",
-          textAlign: "center",
+          marginTop: "73px",
+          marginLeft: "42px",
+          color:"rgba(0, 119, 255, 1)"
         }}
       >
         Sign Up
       </h1>
-      <div className="container form-container">
+      <div className="form-container" style={{marginTop:"10%"}}>
         <form
           style={{
-            width: "344px",
-            height: "556px",
-            position: "absolute",
-            top: "148px",
-            left: "42px",
-            gap: "20px",
+            width: "100%",
+            margin: "0 auto"
           }}
         >
           <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -73,12 +66,12 @@ const SignUp = () => {
               id="name"
               placeholder="Enter your name"
               style={{
-                  outline: "none",
-                  padding: "16px 12px 16px 12px",
-                  width: "100%",
-                  border:"1px solid rgba(121, 121, 121, 1)",
-                  borderRadius:"8px",
-                }}
+                outline: "none",
+                padding: "16px 12px",
+                width: "100%",
+                border: "1px solid rgba(121, 121, 121, 1)",
+                borderRadius: "8px",
+              }}
             />
           </div>
           <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -89,12 +82,12 @@ const SignUp = () => {
               id="email"
               placeholder="Enter your email"
               style={{
-                  outline: "none",
-                  padding: "16px 12px 16px 12px",
-                  width: "100%",
-                  border:"1px solid rgba(121, 121, 121, 1)",
-                  borderRadius:"8px",
-                }}
+                outline: "none",
+                padding: "16px 12px",
+                width: "100%",
+                border: "1px solid rgba(121, 121, 121, 1)",
+                borderRadius: "8px",
+              }}
             />
           </div>
           <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -105,12 +98,12 @@ const SignUp = () => {
               id="mobile"
               placeholder="Enter your mobile number"
               style={{
-                  outline: "none",
-                  padding: "16px 12px 16px 12px",
-                  width: "100%",
-                  border:"1px solid rgba(121, 121, 121, 1)",
-                  borderRadius:"8px",
-                }}
+                outline: "none",
+                padding: "16px 12px",
+                width: "100%",
+                border: "1px solid rgba(121, 121, 121, 1)",
+                borderRadius: "8px",
+              }}
             />
           </div>
           <div className="form-group" style={{ marginBottom: "10px" }}>
@@ -121,17 +114,17 @@ const SignUp = () => {
               id="country"
               placeholder="Enter your country"
               style={{
-                  outline: "none",
-                  padding: "16px 12px 16px 12px",
-                  width: "100%",
-                  border:"1px solid rgba(121, 121, 121, 1)",
-                  borderRadius:"8px",
-                }}
+                outline: "none",
+                padding: "16px 12px",
+                width: "100%",
+                border: "1px solid rgba(121, 121, 121, 1)",
+                borderRadius: "8px",
+              }}
             />
           </div>
           <div className="form-group" style={{ marginBottom: "10px" }}>
             <label htmlFor="password">Password</label>
-            <div className="input-group " style={{ position: "relative" }}>
+            <div className="input-group" style={{ position: "relative" }}>
               <input
                 type={passwordType}
                 name="password"
@@ -141,10 +134,10 @@ const SignUp = () => {
                 autoComplete="current-password"
                 style={{
                   outline: "none",
-                  padding: "16px 12px 16px 12px",
+                  padding: "16px 12px",
                   width: "100%",
-                  border:"1px solid rgba(121, 121, 121, 1)",
-                  borderRadius:"8px",
+                  border: "1px solid rgba(121, 121, 121, 1)",
+                  borderRadius: "8px",
                 }}
               />
               <span
@@ -173,9 +166,9 @@ const SignUp = () => {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 style={{
                   outline: "none",
-                  border:"1px solid rgba(121, 121, 121, 1)",
-                  borderRadius:"8px",
-                  padding: "16px 12px 16px 12px",
+                  border: "1px solid rgba(121, 121, 121, 1)",
+                  borderRadius: "8px",
+                  padding: "16px 12px",
                   width: "100%",
                 }}
               />
@@ -195,27 +188,30 @@ const SignUp = () => {
             </div>
           </div>
         </form>
-      </div>
-      <button
-        type="submit"
-        className="btn btn-primary btn-block btn-signup"
-        style={{
-          width: "344px",
-          height: "54px",
-          position: "absolute",
-          top: "727px",
-          left: "42px",
-        }}
-      >
-        Sign Up
-      </button>
-      <div style={{ textAlign: "center", marginTop: "10px",position:"absolute",top:"813px",left:"90px" }}>
-          <p>Don't have a Account? 
-          <Link to="/login" style={{textDecoration:"none"}}>
-            <span className="text-primary ms-2"> LOGIN NOW</span>
-          </Link>
+
+        <button
+          type="submit"
+          className="btn btn-block btn-signup"
+          style={{
+            width: "100%",
+            height: "54px",
+            margin: "0 auto",
+            display: "block",
+            marginTop: "20px",
+            backgroundColor:"rgba(0, 119, 255, 1)",
+            color:"white"
+          }}
+        >
+          Sign Up
+        </button>
+        <div style={{ textAlign: "center", marginTop: "20px" }}>
+          <p>Don't have an account? 
+            <Link to="/login" style={{ textDecoration: "none" }}>
+              <span className="text-primary ms-2">LOGIN NOW</span>
+            </Link>
           </p>
         </div>
+      </div>
     </div>
   );
 };

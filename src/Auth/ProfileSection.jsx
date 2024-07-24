@@ -70,16 +70,16 @@ const ProfileSection = () => {
         <Link to="/signup">
           <button
             type="button"
-            class="btn btn-outline-primary w-100 rounded-pill"
-            style={{ height: "57px", fontWeight: "500" }}
+            class="btn  w-100 rounded-pill"
+            style={{ height: "57px", fontWeight: "500" ,borderColor:"rgba(0, 119, 255, 1)" }}
           >
             Sign Up
           </button>
         </Link>
         <span style={{ color: "#407BFF", lineHeight: "45px" }}>or</span>
         <button
-          class="btn btn-primary w-100 rounded-pill "
-          style={{ height: "57px", fontWeight: "500" }}
+          class="btn w-100 rounded-pill "
+          style={{ height: "57px", fontWeight: "500",background:"rgba(0, 119, 255, 1)",color:"white" }}
           type="button"
         >
           Button

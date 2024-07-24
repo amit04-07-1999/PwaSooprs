@@ -7,12 +7,15 @@ import Forgotimage from "../components/Forgotimage";
 const ForgotPassword = () => {
   return (
     <div
+    className="container"
       style={{
-        width: "346px",
-        height: "650px",
-        position: "absolute",
-        top: "141px",
-        left: "42px",
+        width: "100%",
+        marginTop:"40%",
+        display: "flex",
+        justifyContent: "center",
+        flexDirection: "column",
+        alignItems: "center",
+        
       }}
     >
       <Forgotimage
@@ -21,13 +24,14 @@ const ForgotPassword = () => {
       />
 
       {/* //email form with send button */}
-     <div className="mt-5 " style={{width:"344px",height:"154px", }} >
+     <div className="mt-5 " style={{width:"100%"}}>
       <div className="mb-4">
         <label htmlFor="exampleInputEmail1" className="form-label">
           Email address
         </label>
         <input
           type="email"
+          placeholder="Enter Email Address"
           className="form-control"
           id="exampleInputEmail1"
           aria-describedby="emailHelp"
@@ -35,7 +39,7 @@ const ForgotPassword = () => {
         />
       </div>
       <Link to="/forgototp">
-          <button style={{height:"54px", width:"100%" ,fontSize:"16px", fontWeight:"700"}} class="btn btn-primary" type="button">Send</button>
+          <button style={{height:"54px", width:"100%" ,fontSize:"16px", fontWeight:"700",background:"rgba(0, 119, 255, 1)",color:"white"}} class="btn" type="button">Send</button>
           </Link>
     </div>
     <ForgotLoginLink/>
